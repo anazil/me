@@ -1,0 +1,75 @@
+body{
+    background-color: #F6FFF1;
+    margin: 0%;
+    
+    
+}
+.main_box{
+    background-color: #F6FFF1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.left_box{
+    width:500px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+.right_box{
+    width:700px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding-right: 8px;
+    
+    
+}
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+}
+font{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: medium;
+    color: rgb(113, 111, 125);
+}
+h4{
+    font-size: small;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.fa-brands,.fa-solid{
+    padding:3px;
+}
+.more{
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 30px;
+}
+.sub_head{
+    font-family: 'Diphylleia', serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+p{
+    font-family: 'Diphylleia', serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    line-height: 22px;
+}
+@media only screen and (max-width: 768px) {
+    .main_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .left_box{
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .right_box{
+        width: auto;
+        padding-left: 7px;
+    }
+}
+a{
+    color: black;
+}
