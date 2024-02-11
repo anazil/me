@@ -165,3 +165,14 @@ a{
       padding-left: 12px;
     }
   }
+.footer{
+    width:auto;
+    height:150px;
+    
+  }
+  @media only screen and (max-width: 768px){
+    .footer{
+      width:auto;
+      
+    }
+  }
