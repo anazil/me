@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anazil-Blog</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#contact">Attainments</a>
+        <a href="index.html">Projects</a>
+        <a href="#about">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="blog_area">
+        <h1>A Guide to Installing GCC on Windows.</h1>
+        <h3 style="font-weight: 200;">Writer:Muhammed Anazil T A<br>February 15 2024</h3>
+        <img class="blog_image" src="blog1.webp" width="80%">
+        <p>As developers, the quest for a robust and versatile compiler is paramount, and GCC (GNU Compiler Collection) stands as a stalwart in the coding realm. While it is commonly associated with Unix-based systems, installing GCC on a Windows operating system is a straightforward process that can significantly enhance your development environment.</p>
+        <p><b>Step 1: Download Mingw-w64 Installer</b></p>
+        <p>To begin the installation, head over to the official Mingw-w64 website <a href="https://mingw-w64.org/doku.php">(https://mingw-w64.org/doku.php)</a>and download the Mingw-w64 installer. Mingw-w64 is a development environment for Windows, including GCC, which allows you to compile and run C and C++ programs.</p>
+        <p><b>Step 2: Run the Installer</b></p>
+        <p>Once the installer is downloaded, run the executable file. The installation wizard will guide you through the process. During installation, you’ll be prompted to make some selections. Ensure you choose the architecture (32-bit or 64-bit) that aligns with your Windows version.</p>
+        <p><b>Step 3: Select Components</b></p>
+        <p>In the installation wizard, you’ll encounter a screen where you can select components. Make sure to check the box for “C++” under the “Select Components” section if you plan to compile C++ code. This step ensures that the necessary components for C++ development are included in the installation.</p>
+        <p><b>Step 4: Choose Installation Directory</b></p>
+        <p>Next, choose the installation directory. The default directory is often suitable, but you can customize it according to your preferences. Once you’ve made your selection, proceed with the installation.</p>
+        <p><b>Step 5: Add Mingw-w64 to System Path</b></p>
+        <p>To use GCC from the command line, you’ll need to add the Mingw-w64 binaries to the system PATH. During the installation, you’ll be asked if you want to add Mingw-w64 to the system PATH. Be sure to select this option to enable easy access to GCC commands from any command prompt window.</p>
+        <p><b>Step 6: Verify Installation</b></p>
+        <p>To ensure a successful installation, open a command prompt and type the following command:</p>
+        <p>gcc --version</p>
+        <p>This command should display the version of GCC installed on your system, confirming that the installation was successful.</p>
+        <p>By following these steps, you’ll have GCC up and running on your Windows machine, ready to compile and execute your C and C++ code. This simple yet essential addition to your development toolkit opens the door to a world of possibilities, empowering you to create robust and efficient applications on the Windows platform. Happy coding!</p>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+</body>
+</html>
